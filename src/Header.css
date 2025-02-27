@@ -1,0 +1,179 @@
+/* Default Header Style */
+.header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 120px;
+    width: 100%; /* Fully responsive */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h3 {
+    font-size: 35px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.logo img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Logout Button (Power Icon) */
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logout-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.logout-icon:hover {
+    color: beige;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+    z-index: 100;
+}
+
+.dropdown-menu p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+
+.dropdown-menu p:hover {
+    background-color: #f1f1f1;
+}
+
+/* Different Header Background Colors */
+.question1-header { background-color: #4c0b0b; }
+.explore-header { background-color: #4c0b0b; }
+.recipes-header { background-color: #d35400; }
+.login-header { background-color: #E16A54; }
+.register-header { background-color: burlywood; }
+.home-header { background-color: blueviolet; }
+.recipe-header { background-color: #d35400; }
+.exp-header { background-color: skyblue; }
+
+/* Default Navigation */
+.navi {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+/* Different Navigation Background Colors */
+.question1-nav { background-color: transparent; }
+.explore-nav { background-color: #4c0b0b; }
+.recipes-nav { background-color: #d35400; }
+.login-nav { background-color: #E16A54; }
+.register-nav { background-color: burlywood; }
+.home-nav { background-color: blueviolet; }
+.recipe-nav { background-color: #d35400; }
+.exp-nav { background-color: skyblue; }
+
+/* Button Styles */
+.navi button {
+    border: none;
+    padding: 7px 15px;
+    background-color: white;
+    color: #4c0b0b;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navi button:hover {
+    background-color: #f1c40f;
+    color: #4c0b0b;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1366px) {
+    .header {
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .navi {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logout-container {
+        top: 15px;
+        right: 20px;
+    }
+
+    .hamburger-icon {
+        right: 15px;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        margin-top: 90px;
+    }
+
+    .navi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logout-container {
+        right: 15px;
+    }
+
+    .hamburger-icon {
+        right: 10px;
+    }
+}
